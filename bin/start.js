@@ -7,6 +7,10 @@
 import app from "../app.js";
 import createDebugger from "debug";
 import http from "http";
+import mongoose from 'mongoose';
+
+
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/hooplink-archioweb-api');
 
 const debug = createDebugger('hooplink-archioweb-api:server')
 /**
