@@ -8,13 +8,13 @@ import app from "../app.js";
 import createDebugger from "debug";
 import http from "http";
 import mongoose from 'mongoose';
-const { MongoClient, ServerApiVersion } = require('mongodb');
+//const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
-//mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/hooplink-archioweb-api');
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/hooplink-archioweb-api');
 
 
-mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://admin:<psw123>@clusterhooplink-api.thgckff.mongodb.net/?retryWrites=true&w=majority');
+//mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://admin:<psw123>@clusterhooplink-api.thgckff.mongodb.net/?retryWrites=true&w=majority');
 
 
 
